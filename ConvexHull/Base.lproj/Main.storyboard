@@ -1,24 +1,66 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Convex Hull View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ConvexHullViewController" customModule="ConvexHull" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gen-pQ-c1U" customClass="ConvexHullView" customModule="ConvexHull" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44" width="375" height="690"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q0S-fP-7YS">
+                                <rect key="frame" x="0.0" y="734" width="375" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="DmJ-Os-iU5"/>
+                                </constraints>
+                                <items>
+                                    <barButtonItem title="Start" id="LTl-wx-9Bc">
+                                        <connections>
+                                            <action selector="start:" destination="BYZ-38-t0r" id="ioW-64-6Iy"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="Dkh-1W-6Bn"/>
+                                    <barButtonItem systemItem="refresh" id="BZO-fo-dZS">
+                                        <connections>
+                                            <action selector="reset:" destination="BYZ-38-t0r" id="fWq-sQ-4ir"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="q0S-fP-7YS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Bkh-N3-XpT"/>
+                            <constraint firstItem="Gen-pQ-c1U" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="CEb-eP-4hL"/>
+                            <constraint firstItem="Gen-pQ-c1U" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Fjj-qW-HEQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="q0S-fP-7YS" secondAttribute="bottom" id="MY7-oK-Mnd"/>
+                            <constraint firstItem="q0S-fP-7YS" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="aPO-5a-ZuC"/>
+                            <constraint firstItem="q0S-fP-7YS" firstAttribute="top" secondItem="Gen-pQ-c1U" secondAttribute="bottom" id="ndB-9y-nOU"/>
+                            <constraint firstItem="Gen-pQ-c1U" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="uOc-LK-5dR"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="convexHullView" destination="Gen-pQ-c1U" id="sBA-FF-uHm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="520.79999999999995" y="131.52709359605913"/>
         </scene>
     </scenes>
 </document>

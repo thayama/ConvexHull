@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		3FCE5F76203C14CE009E73F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCE5F75203C14CE009E73F4 /* AppDelegate.swift */; };
-		3FCE5F78203C14CE009E73F4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCE5F77203C14CE009E73F4 /* ViewController.swift */; };
+		3FCE5F78203C14CE009E73F4 /* ConvexHullViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCE5F77203C14CE009E73F4 /* ConvexHullViewController.swift */; };
 		3FCE5F7B203C14CE009E73F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FCE5F79203C14CE009E73F4 /* Main.storyboard */; };
 		3FCE5F7D203C14CE009E73F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FCE5F7C203C14CE009E73F4 /* Assets.xcassets */; };
 		3FCE5F80203C14CE009E73F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FCE5F7E203C14CE009E73F4 /* LaunchScreen.storyboard */; };
+		3FCE5F88203C180C009E73F4 /* ConvexHullView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCE5F87203C180C009E73F4 /* ConvexHullView.swift */; };
+		3FCE5F8A203C21AB009E73F4 /* ConvexHull.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCE5F89203C21AB009E73F4 /* ConvexHull.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3FCE5F72203C14CE009E73F4 /* ConvexHull.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConvexHull.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FCE5F75203C14CE009E73F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3FCE5F77203C14CE009E73F4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3FCE5F77203C14CE009E73F4 /* ConvexHullViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvexHullViewController.swift; sourceTree = "<group>"; };
 		3FCE5F7A203C14CE009E73F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3FCE5F7C203C14CE009E73F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3FCE5F7F203C14CE009E73F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3FCE5F81203C14CE009E73F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FCE5F87203C180C009E73F4 /* ConvexHullView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvexHullView.swift; sourceTree = "<group>"; };
+		3FCE5F89203C21AB009E73F4 /* ConvexHull.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvexHull.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,8 +59,10 @@
 			isa = PBXGroup;
 			children = (
 				3FCE5F75203C14CE009E73F4 /* AppDelegate.swift */,
-				3FCE5F77203C14CE009E73F4 /* ViewController.swift */,
+				3FCE5F77203C14CE009E73F4 /* ConvexHullViewController.swift */,
+				3FCE5F89203C21AB009E73F4 /* ConvexHull.swift */,
 				3FCE5F79203C14CE009E73F4 /* Main.storyboard */,
+				3FCE5F87203C180C009E73F4 /* ConvexHullView.swift */,
 				3FCE5F7C203C14CE009E73F4 /* Assets.xcassets */,
 				3FCE5F7E203C14CE009E73F4 /* LaunchScreen.storyboard */,
 				3FCE5F81203C14CE009E73F4 /* Info.plist */,
@@ -136,8 +142,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3FCE5F78203C14CE009E73F4 /* ViewController.swift in Sources */,
+				3FCE5F78203C14CE009E73F4 /* ConvexHullViewController.swift in Sources */,
 				3FCE5F76203C14CE009E73F4 /* AppDelegate.swift in Sources */,
+				3FCE5F88203C180C009E73F4 /* ConvexHullView.swift in Sources */,
+				3FCE5F8A203C21AB009E73F4 /* ConvexHull.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
